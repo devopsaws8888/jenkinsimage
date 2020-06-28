@@ -1,6 +1,5 @@
 FROM jenkins/jenkins:lts
 LABEL MAINTAINER="Raja"
-USER root
 ARG DEBIAN_FRONTEND=noninteractive
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs
